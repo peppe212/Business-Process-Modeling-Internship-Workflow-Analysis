@@ -27,9 +27,6 @@ A thorough analysis was conducted to verify critical properties:
 2. **Examine Petri Nets**  
    Use Petri net analysis tools like **WoPeD** or **ProM** to load the `.pnml` files. You can verify soundness, liveness, and other properties yourself.
 
-3. **Compile the Report**  
-   Navigate to `report/` and run `pdflatex main.tex` (or use any LaTeX compiler) to generate the PDF. This will produce a detailed explanation of each model and the analysis steps taken.
-
 
 ## Key Highlights
 
