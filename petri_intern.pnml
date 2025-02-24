@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with Workflow PetriNet Designer Version 3.9.2 (woped.org)
+Manual editing may break compatibility.-->
+<pnml>
+  <net type="http://www.informatik.hu-berlin.de/top/pntd/ptNetb" id="noID">
+    <place id="p1">
+      <name>
+        <text>START</text>
+        <graphics>
+          <offset x="20" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="20" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="p2">
+      <name>
+        <text>p2</text>
+        <graphics>
+          <offset x="250" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="250" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p3">
+      <name>
+        <text>p3</text>
+        <graphics>
+          <offset x="430" y="290"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="430" y="250"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p4">
+      <name>
+        <text>p4</text>
+        <graphics>
+          <offset x="900" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="900" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p5">
+      <name>
+        <text>p5</text>
+        <graphics>
+          <offset x="1090" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1090" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p6">
+      <name>
+        <text>p6</text>
+        <graphics>
+          <offset x="1290" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1290" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p7">
+      <name>
+        <text>p7</text>
+        <graphics>
+          <offset x="1470" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1470" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p10">
+      <name>
+        <text>p10</text>
+        <graphics>
+          <offset x="650" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="650" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p12">
+      <name>
+        <text>EBG</text>
+        <graphics>
+          <offset x="1730" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1730" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p14">
+      <name>
+        <text>END</text>
+        <graphics>
+          <offset x="2160" y="410"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="2160" y="370"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <place id="p13">
+      <name>
+        <text>p13</text>
+        <graphics>
+          <offset x="1970" y="410"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1970" y="370"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+    </place>
+    <transition id="t4">
+      <name>
+        <text>Perform Activity</text>
+        <graphics>
+          <offset x="980" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="980" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t5">
+      <name>
+        <text>Deadline Expired</text>
+        <graphics>
+          <offset x="1170" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1170" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t6">
+      <name>
+        <text>provide report</text>
+        <graphics>
+          <offset x="1370" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1370" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t7">
+      <name>
+        <text>Check for new possible activities</text>
+        <graphics>
+          <offset x="1550" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1550" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t8">
+      <name>
+        <text>Activity received</text>
+        <graphics>
+          <offset x="1820" y="230"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1820" y="190"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t9">
+      <name>
+        <text>No ulterior activitis received</text>
+        <graphics>
+          <offset x="1810" y="410"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="1810" y="370"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t10">
+      <name>
+        <text>Activity Assigned</text>
+        <graphics>
+          <offset x="530" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="530" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t15">
+      <name>
+        <text>Internship Finished</text>
+        <graphics>
+          <offset x="2030" y="410"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="2030" y="370"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t1">
+      <name>
+        <text>assignment received</text>
+        <graphics>
+          <offset x="120" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="120" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t2">
+      <name>
+        <text>contact project leader</text>
+        <graphics>
+          <offset x="320" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="320" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <transition id="t3">
+      <name>
+        <text>Acknowledge the deadline</text>
+        <graphics>
+          <offset x="730" y="330"/>
+        </graphics>
+      </name>
+      <graphics>
+        <position x="730" y="290"/>
+        <dimension x="40" y="40"/>
+      </graphics>
+      <toolspecific tool="WoPeD" version="1.0">
+        <time>0</time>
+        <timeUnit>1</timeUnit>
+        <orientation>1</orientation>
+      </toolspecific>
+    </transition>
+    <arc id="a11" source="t5" target="p6">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a10" source="p5" target="t5">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a13" source="t6" target="p7">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a12" source="p6" target="t6">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a15" source="t10" target="p10">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a14" source="p12" target="t8">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a17" source="t8" target="p3">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a16" source="p12" target="t9">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a19" source="t9" target="p13">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a18" source="p10" target="t3">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a1" source="t1" target="p2">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a2" source="p1" target="t1">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a3" source="p2" target="t2">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a4" source="p7" target="t7">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a5" source="t2" target="p3">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a6" source="p3" target="t10">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a7" source="t3" target="p4">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a8" source="p4" target="t4">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a9" source="t4" target="p5">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a137" source="t7" target="p12">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a205" source="p13" target="t15">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <arc id="a206" source="t15" target="p14">
+      <inscription>
+        <text>1</text>
+        <graphics>
+          <offset x="500.0" y="-12.0"/>
+        </graphics>
+      </inscription>
+      <graphics/>
+      <toolspecific tool="WoPeD" version="1.0">
+        <probability>1.0</probability>
+        <displayProbabilityOn>false</displayProbabilityOn>
+        <displayProbabilityPosition x="500.0" y="12.0"/>
+      </toolspecific>
+    </arc>
+    <toolspecific tool="WoPeD" version="3.9.2">
+      <bounds>
+        <position x="2" y="25"/>
+        <dimension x="2539" y="1111"/>
+      </bounds>
+      <scale>100</scale>
+      <treeWidthRight>2219</treeWidthRight>
+      <overviewPanelVisible>true</overviewPanelVisible>
+      <treeHeightOverview>100</treeHeightOverview>
+      <treePanelVisible>true</treePanelVisible>
+      <verticalLayout>false</verticalLayout>
+      <resources/>
+      <simulations/>
+      <partnerLinks/>
+      <variables/>
+    </toolspecific>
+  </net>
+</pnml>
